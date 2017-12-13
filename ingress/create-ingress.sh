@@ -2,10 +2,10 @@
 
 export NAMESPACE=shared-ingress
 
-# wait to delet resources
-sleep 15
+kubectl delete namespace $NAMESPACE --ignore-not-found=true --now=true
 
-kubectl delete namespace $NAMESPACE --ignore-not-found=true
+# wait to delete resources
+sleep 30
 
 kubectl create namespace $NAMESPACE
 
