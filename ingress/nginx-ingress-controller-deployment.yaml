@@ -55,3 +55,4 @@ spec:
         - /nginx-ingress-controller
         - --default-backend-service=$(POD_NAMESPACE)/default-http-backend
         - --update-status=false
+        - --configmap=shared-ingress/nginx-config

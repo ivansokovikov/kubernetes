@@ -1,0 +1,10 @@
+kind: ConfigMap
+apiVersion: v1
+metadata:
+  name: nginx-config
+data:
+  hsts: 'false'
+  hsts-include-subdomains: 'false'
+  hsts-max-age: '0'
+  hsts-preload: 'false'
+  ssl-redirect: 'false'
